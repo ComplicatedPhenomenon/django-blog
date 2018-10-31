@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     urls.py  
-   Description :  
+   File Name：     urls.py
+   Description :
    Author :       JHao
    date：          2017/4/13
 -------------------------------------------------
    Change Activity:
-                   2017/4/13: 
+                   2017/4/13:
 -------------------------------------------------
 """
 __author__ = 'JHao'
@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^link/$', views.link, name='link'),
     url(r'^message$', views.message, name='message'),
     url(r'^article/(?P<pk>\d+)/$', views.articles, name='article'),
-    url(r'^getComment/$', views.GetComment, name='get_comment'),
+#    url(r'^getComment/$', views.GetComment, name='get_comment'),
     url(r'^detail/(?P<pk>\d+)/$', views.detail, name='detail'),
     url(r'^detail/(?P<pk>\d+)$', views.detail, name='detail'),
     url(r'^search/$', views.search, name='search'),

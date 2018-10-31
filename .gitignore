@@ -1,0 +1,4 @@
+blog/migrations/
+blog/templatetags/*.pyc
+blog/*.pyc
+django_blog/*.pyc
