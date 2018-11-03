@@ -81,3 +81,5 @@ Solution: Comment `url(r'^getComment/$', views.GetComment, name='get_comment'),`
 3. Django admin login
 
   请输入一个正确的 用户名 和密码. 注意他们都是区分大小写的. [solution](https://stackoverflow.com/questions/26205423/django-admin-login)
+
+## Deploy on Herokou
