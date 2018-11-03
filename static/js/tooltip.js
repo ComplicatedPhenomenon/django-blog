@@ -1,31 +1,31 @@
 /*
-	×÷Õß£ºÒ¶»ªÎ°£¬ÓÊÏä£ºyhw2710@126.com,QQ:517025143
+	ä½œè€…ï¼šå¶åä¼Ÿï¼Œé‚®ç®±ï¼šyhw2710@126.com,QQ:517025143
 */
 $(function(){
-			$(".news_content p:odd").addClass("p03");  //¸ôĞĞ»»É«´¦£¬¶îÊıĞĞÔö¼ÓÑùÊ½P03
-			
-			//Êó±ê¾­¹ıÑùÊ½±ä»¯´¦
-			$(".news_content p").hover( 
-                function () { 
-                    $(this).addClass("p02");   //Êó±ê¾­¹ıÊ±Ôö¼ÓÑùÊ½P02
-                }, 
-                function () { 
-                    $(this).removeClass("p02"); //Êó±êÀë¿ªÊ±ÒÆ³ıÑùÊ½P02
+			$(".news_content p:odd").addClass("p03");  //éš”è¡Œæ¢è‰²å¤„ï¼Œé¢æ•°è¡Œå¢åŠ æ ·å¼P03
+
+			//é¼ æ ‡ç»è¿‡æ ·å¼å˜åŒ–å¤„
+			$(".news_content p").hover(
+                function () {
+                    $(this).addClass("p02");   //é¼ æ ‡ç»è¿‡æ—¶å¢åŠ æ ·å¼P02
+                },
+                function () {
+                    $(this).removeClass("p02"); //é¼ æ ‡ç¦»å¼€æ—¶ç§»é™¤æ ·å¼P02
                 }
             )
-			
-			//³¬Á´½ÓÎŞĞéÏß¿ò´¦
-			$("a").focus( 
-                function () { 
-                    $(this).blur(); //µÃµ½½¹µãÓëÊ§È¥½¹µãĞ§¹ûÒ»ÖÂ
+
+			//è¶…é“¾æ¥æ— è™šçº¿æ¡†å¤„
+			$("a").focus(
+                function () {
+                    $(this).blur(); //å¾—åˆ°ç„¦ç‚¹ä¸å¤±å»ç„¦ç‚¹æ•ˆæœä¸€è‡´
                 }
              )
         })
 
-//±êÌâÌáÊ¾Ğ§¹û´¦
+//æ ‡é¢˜æç¤ºæ•ˆæœå¤„
 var sweetTitles = {
-	x : 10,	
-	y : 20,	
+	x : 10,
+	y : 20,
 	tipElements : "a",
 	init : function() {
 		$(this.tipElements).mouseover(function(e){
@@ -48,7 +48,7 @@ var sweetTitles = {
 					"opacity":"1",
 					"top":(e.pageY+20)+"px",
 				"left":(e.pageX+10)+"px"
-				}).show('fast');	
+				}).show('fast');
 		}).mouseout(function(){
 			this.title = this.myTitle;
 			$('#tooltip').remove();

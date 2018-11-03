@@ -68,11 +68,7 @@ http://ip:port/admin
 
 ## Trouble shooting
 
-1. `django.core.exceptions.ImproperlyConfigured`
-```
-django.core.exceptions.ImproperlyConfigured: Specifying a namespace in include() without providing an app_name is not supported. Set the app_name attribute in the included module, or pass a 2-tuple containing the list of patterns and app_name instead.
-```
-[solution](https://stackoverflow.com/questions/48608894/specifying-a-namespace-in-include-without-providing-an-app-name)
+1. Configure the right environment.
 
 2. `AttributeError: module 'blog.views' has no attribute 'GetComment'`
 ```

@@ -1,25 +1,25 @@
- function checkform()
+function checkform()
 {
-     if($("#u_name").val()=="" || $("#u_name").val().length<2)
-          {
-              layer.msg('ÓÃ»§Ãû²»ÄÜÎª¿Õ»òÕßêÇ³ÆÌ«¶ÌÁËà¸', {icon: 2}); 
-               return false;
-          }
+    if($("#u_name").val()=="" || $("#u_name").val().length<2)
+         {
+             layer.msg('ç”¨æˆ·åä¸èƒ½ä¸ºç©ºæˆ–è€…æ˜µç§°å¤ªçŸ­äº†å–”', {icon: 2});
+              return false;
+         }
 
 if($("#txaArticle").val()=="" || $("#txaArticle").val().length<2)
-          {
-              layer.msg('Ç×É¶¶¼Ã»Ð´à¸£¬»òÕßÄÚÈÝÌ«ÉÙÀ²£¡', {icon: 2}); 
-               return false;
-          }
-		  
-		if($("#txaArticle").val()!="" && $("#u_name").val()!="")
-          {
-              layer.alert('¹§Ï²Ìá½»³É¹¦£¡´ý¹ÜÀíÔ±ÉóºËÍ¨¹ýºóÏÔÊ¾!', {icon: 1}); 
-               return true;
-          }
-		  
-     else
-     {
-          return true;
-     }
+         {
+             layer.msg('äº²å•¥éƒ½æ²¡å†™å–”ï¼Œæˆ–è€…å†…å®¹å¤ªå°‘å•¦ï¼', {icon: 2});
+              return false;
+         }
+
+   if($("#txaArticle").val()!="" && $("#u_name").val()!="")
+         {
+             layer.alert('æ­å–œæäº¤æˆåŠŸï¼å¾…ç®¡ç†å‘˜å®¡æ ¸é€šè¿‡åŽæ˜¾ç¤º!', {icon: 1});
+              return true;
+         }
+
+    else
+    {
+         return true;
+    }
 } 

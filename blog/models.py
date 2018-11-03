@@ -51,14 +51,6 @@ class Article(models.Model):
         self.view += 1
         self.save(update_fields=['view'])
 
-    def commenced(self):
-        """
-        增加评论数
-        :return:
-        """
-        self.comment += 1
-        self.save(update_fields=['comment'])
-
     class Meta:  # 按时间降序
         ordering = ['-date_time']
 
@@ -75,12 +67,3 @@ class Category(models.Model):
 
     def __unicode__(self):
         return self.name
-
-
-class Comment(models.Model):
-    title = models.CharField(u"标题", max_length=100)
-    source_id = models.CharField(u'文章id或source名称', max_length=25)
-    create_time = models.DateTimeField(u'评论时间', auto_now=True)
-    user_name = models.CharField(u'评论用户', max_length=25)
-    url = models.CharField(u'链接', max_length=100)
-    comment = models.CharField(u'评论内容', max_length=500)

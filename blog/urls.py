@@ -14,7 +14,7 @@ __author__ = 'JHao'
 
 from blog import views
 from django.conf.urls import url
-
+app_name = 'blog'
 urlpatterns = [
     url(r'^index/$', views.index, name='index'),
     url(r'^about/$', views.about, name='about'),
