@@ -81,5 +81,18 @@ Solution: Comment `url(r'^getComment/$', views.GetComment, name='get_comment'),`
 3. Django admin login
 
   请输入一个正确的 用户名 和密码. 注意他们都是区分大小写的. [solution](https://stackoverflow.com/questions/26205423/django-admin-login)
+4. Database
+  * Launch  MySQL
+
+    ```sh
+    django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 61] Connection refused)")
+    ```
+
+  * Create the database `django_blog` for receiving the migration data.
+
+  * Create the superuser
+
+
+
 
 ## Deploy on Herokou
